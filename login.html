@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 35%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #F6396F;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 15px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #FCF7F7;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#"><h5><i class="fa fa-user-circle" aria-hidden="true"></i>My  Profile</h5></a>
+  <a href="#"><h5><i class="fa fa-address-book-o" aria-hidden="true"></i>My Account</h5></a>
+  <a href="#"><h5><i class="fa fa-user-circle" aria-hidden="true"></i>My Matches</h5></a>
+  <a href="#"><h5><i class="fa fa-handshake-o" aria-hidden="true"></i> Invite Friends</h5></a>
+  <a href="exmple.html"><h5><i class="fa fa-user-plus" aria-hidden="true"></i>Personal Details</h5></a>
+  <a href="#"><h5><i class="fa fa-random" aria-hidden="true"></i>My Rankings</h5></a>
+  <a href="#"><h5><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</h5></a>
+</div>
+
+<h2>Animated Sidenav Example</h2>
+<p>Click on the element below to open the side navigation menu.</p>
+<span style="font-size:30px;cursor:pointer"  onclick="openNav()">&#9776; Personal Information </span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+   
+</body>
+</html> 
